@@ -16,10 +16,10 @@ RAYFace Software를 연결하여 주요 정보들을 요청/가져오는 App
 
 환자의 정보를 가져온다.
 
-* Method Name : ```rcs.apps.rayfaceconnector.getpatients```
+* Method Name : ```rcs.apps.rayfaceconnector.patient.get```
 * Response Name 
-  * ```rcs.apps.rayfaceconnector.getpatients.[REPLYTO].success```
-  * ```rcs.apps.rayfaceconnector.getpatients.[REPLYTO].fail```
+  * ```rcs.apps.rayfaceconnector.patient.get.[REPLYTO].success```
+  * ```rcs.apps.rayfaceconnector.patient.get.[REPLYTO].fail```
 
 
 **RestAPI**
@@ -27,13 +27,13 @@ RAYFace Software를 연결하여 주요 정보들을 요청/가져오는 App
 ```
 // Bacic usage
 {
-	"command" : "rcs.apps.rayfaceconnector.getpatients",
+	"command" : "rcs.apps.rayfaceconnector.patient.get",
 	"data" : {}
 }
 
 // with Filter
 {
-	"command" : "rcs.apps.rayfaceconnector.getpatients",
+	"command" : "rcs.apps.rayfaceconnector.patient.get",
 	"data" : {
 		{
 			"project" : ["pid", "full_name"],
@@ -56,17 +56,17 @@ RAYFace Software를 연결하여 주요 정보들을 요청/가져오는 App
 
 환자의 정보를 이름으로 검색한 결과를 가져온다. 
 
-* Method Name : ```rcs.apps.rayfaceconnector.getpatientsbyname```
+* Method Name : ```rcs.apps.rayfaceconnector.patient.getbyname```
 * Response Name 
-  * ```rcs.apps.rayfaceconnector.getpatientsbyname.[REPLYTO].success```
-  * ```rcs.apps.rayfaceconnector.getpatientsbyname.[REPLYTO].fail```
+  * ```rcs.apps.rayfaceconnector.patient.getbyname.[REPLYTO].success```
+  * ```rcs.apps.rayfaceconnector.patient.getbyname.[REPLYTO].fail```
 
 **RestAPI**
 
 ```
 // Bacic usage
 {
-	"command" : "rcs.apps.rayfaceconnector.getpatientsbyname",
+	"command" : "rcs.apps.rayfaceconnector.patient.getbyname",
 	"data" : {
 		"name" : "승"
 	}
@@ -84,17 +84,17 @@ RAYFace Software를 연결하여 주요 정보들을 요청/가져오는 App
 
 지정한 성별에 해당하는 Patient를 가져온다.
 
-* Method Name : ```rcs.apps.rayfaceconnector.getpatientsbygender```
+* Method Name : ```rcs.apps.rayfaceconnector.patient.getbygender```
 * Response Name 
-  * ```rcs.apps.rayfaceconnector.getpatientsbygender.[REPLYTO].success```
-  * ```rcs.apps.rayfaceconnector.getpatientsbygender.[REPLYTO].fail```
+  * ```rcs.apps.rayfaceconnector.patient.getbygender.[REPLYTO].success```
+  * ```rcs.apps.rayfaceconnector.patient.getbygender.[REPLYTO].fail```
 
 **RestAPI**
 
 ```
 // Bacic usage
 {
-	"command" : "rcs.apps.rayfaceconnector.getpatientsbygender",
+	"command" : "rcs.apps.rayfaceconnector.patient.getbygender",
 	"data" : {
 		"gender" : "male"
 	}
@@ -111,17 +111,17 @@ RAYFace Software를 연결하여 주요 정보들을 요청/가져오는 App
 
 지정한 생년월일이 일치하는 Patent를 가져온다.
 
-* Method Name : ```rcs.apps.rayfaceconnector.getpatientsbybod```
+* Method Name : ```rcs.apps.rayfaceconnector.patient.getbybod```
 * Response Name 
-  * ```rcs.apps.rayfaceconnector.getpatientsbybod.[REPLYTO].success```
-  * ```rcs.apps.rayfaceconnector.getpatientsbybod.[REPLYTO].fail```
+  * ```rcs.apps.rayfaceconnector.patient.getbybod.[REPLYTO].success```
+  * ```rcs.apps.rayfaceconnector.patient.getbybod.[REPLYTO].fail```
 
 **RestAPI**
 
 ```
 // Bacic usage
 {
-	"command" : "rcs.apps.rayfaceconnector.getpatientsbybod",
+	"command" : "rcs.apps.rayfaceconnector.patient.getbybod",
 	"data" : {
 		"bod" : "2022-11-02"
 	}
@@ -149,17 +149,17 @@ RAYFace 의 Project/Case 정보는 매우 많은 정보를 담고 있다.
 
 RAYFace Project를 가져온다.
 
-* Method Name : ```rcs.apps.rayfaceconnector.getprojects```
+* Method Name : ```rcs.apps.rayfaceconnector.projects.get```
 * Response Name 
-  * ```rcs.apps.rayfaceconnector.getprojects.[REPLYTO].success```
-  * ```rcs.apps.rayfaceconnector.getprojects.[REPLYTO].fail```
+  * ```rcs.apps.rayfaceconnector.projects.get.[REPLYTO].success```
+  * ```rcs.apps.rayfaceconnector.projects.get.[REPLYTO].fail```
 
 **RestAPI**
 
 ```
 // Bacic usage
 {
-	"command" : "rcs.apps.rayfaceconnector.getprojects",
+	"command" : "rcs.apps.rayfaceconnector.projects.get",
 	"data" : {
 		"filter" : { 
 			"pid" : "PID2018-00006" 
@@ -178,17 +178,17 @@ RAYFace Project를 가져온다.
 
 RAYFace Project를 가져온다.
 
-* Method Name : ```rcs.apps.rayfaceconnector.getprojectsbypid```
+* Method Name : ```rcs.apps.rayfaceconnector.projects.getbypid```
 * Response Name 
-  * ```rcs.apps.rayfaceconnector.getprojectsbypid.[REPLYTO].success```
-  * ```rcs.apps.rayfaceconnector.getprojectsbypid.[REPLYTO].fail```
+  * ```rcs.apps.rayfaceconnector.projects.getbypid.[REPLYTO].success```
+  * ```rcs.apps.rayfaceconnector.projects.getbypid.[REPLYTO].fail```
 
 **RestAPI**
 
 ```
 // Bacic usage
 {
-	"command" : "rcs.apps.rayfaceconnector.getprojectsbypid",
+	"command" : "rcs.apps.rayfaceconnector.projects.getbypid",
 	"data" : {
 		"pid" : "PID2018-00006" 
 	}
