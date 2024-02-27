@@ -1,12 +1,12 @@
-# Apps
+# Modules
 
 ## Introduction
 
-RAYTeams Community Server를 이용하는 Service를 총칭합니다.
+RAYTeams Community Server를 구성하는 주요 Module을 소개합니다.
 
 ## Basic Interface
 
-App 들은 RCS에서 제공하는 3가지 방법으로 요청을 보낼 수 있습니다.
+Module 들은 RCS에서 제공하는 3가지 방법으로 요청을 보낼 수 있습니다.
 
 ### RestAPI
 
@@ -23,6 +23,7 @@ Method는 ```post```를 지원합니다.
 
 ### CLI
 
-## App List
 
-### [RAYFace Connector](./rayteams-apps-rayfaceconnector.md)
+## Module List
+
+### [RSC Process](./rcs.process.md)
